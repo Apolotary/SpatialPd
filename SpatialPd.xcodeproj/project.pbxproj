@@ -19,7 +19,6 @@
 		437F56621768240F00861D1A /* SPDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F56611768240F00861D1A /* SPDViewController.m */; };
 		437F56651768240F00861D1A /* SPDViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437F56631768240F00861D1A /* SPDViewController_iPhone.xib */; };
 		437F56681768240F00861D1A /* SPDViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437F56661768240F00861D1A /* SPDViewController_iPad.xib */; };
-		437F5681176828C300861D1A /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F567E1768253C00861D1A /* libpd-ios.a */; };
 		437F568B17684EA600861D1A /* ShyDrums.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568717684EA600861D1A /* ShyDrums.wav */; };
 		437F568C17684EA600861D1A /* ShyGuitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568817684EA600861D1A /* ShyGuitar.wav */; };
 		437F568D17684EA600861D1A /* ShyPiano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568917684EA600861D1A /* ShyPiano.wav */; };
@@ -28,6 +27,7 @@
 		437F5693176854D800861D1A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F5692176854D800861D1A /* AVFoundation.framework */; };
 		437F569717685A4600861D1A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F569617685A4600861D1A /* AudioToolbox.framework */; };
 		438CE2EA1771D79D00B26496 /* spatial1.pd in Resources */ = {isa = PBXBuildFile; fileRef = 438CE2E91771D79D00B26496 /* spatial1.pd */; };
+		43911E3D17C6C79500437117 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43911E3817C6C78B00437117 /* libpd-ios.a */; };
 		4393966E178C495E00991BB7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4393966D178C495E00991BB7 /* CoreMotion.framework */; };
 		43ADDA641770459D0067CA02 /* circle_user1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43ADDA631770459D0067CA02 /* circle_user1.png */; };
 		43ADDA6917716CC10067CA02 /* SPDPdPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDA6817716CC10067CA02 /* SPDPdPatchManager.m */; };
@@ -44,23 +44,23 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		437F567D1768253C00861D1A /* PBXContainerItemProxy */ = {
+		43911E3717C6C78B00437117 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 437F56781768253C00861D1A /* libpd.xcodeproj */;
+			containerPortal = 43911E3217C6C78B00437117 /* libpd.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D2AAC07E0554694100DB518D;
 			remoteInfo = "libpd-ios";
 		};
-		437F567F1768253C00861D1A /* PBXContainerItemProxy */ = {
+		43911E3917C6C78B00437117 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 437F56781768253C00861D1A /* libpd.xcodeproj */;
+			containerPortal = 43911E3217C6C78B00437117 /* libpd.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 119013AB1486450C00086F19;
 			remoteInfo = "libpd-osx";
 		};
-		437F5682176828D600861D1A /* PBXContainerItemProxy */ = {
+		43911E3B17C6C79200437117 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 437F56781768253C00861D1A /* libpd.xcodeproj */;
+			containerPortal = 43911E3217C6C78B00437117 /* libpd.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = "libpd-ios";
@@ -85,7 +85,6 @@
 		437F56611768240F00861D1A /* SPDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDViewController.m; sourceTree = "<group>"; };
 		437F56641768240F00861D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPDViewController_iPhone.xib; sourceTree = "<group>"; };
 		437F56671768240F00861D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPDViewController_iPad.xib; sourceTree = "<group>"; };
-		437F56781768253C00861D1A /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "SpatialPd/pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
 		437F568717684EA600861D1A /* ShyDrums.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyDrums.wav; sourceTree = "<group>"; };
 		437F568817684EA600861D1A /* ShyGuitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyGuitar.wav; sourceTree = "<group>"; };
 		437F568917684EA600861D1A /* ShyPiano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyPiano.wav; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		437F5694176854F800861D1A /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		437F569617685A4600861D1A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		438CE2E91771D79D00B26496 /* spatial1.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spatial1.pd; sourceTree = "<group>"; };
+		43911E3217C6C78B00437117 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "SpatialPd/pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
 		4393966D178C495E00991BB7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		43ADDA6017703D6E0067CA02 /* SPDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDConstants.h; sourceTree = "<group>"; };
 		43ADDA631770459D0067CA02 /* circle_user1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_user1.png; sourceTree = "<group>"; };
@@ -121,11 +121,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43911E3D17C6C79500437117 /* libpd-ios.a in Frameworks */,
 				4393966E178C495E00991BB7 /* CoreMotion.framework in Frameworks */,
 				437F569717685A4600861D1A /* AudioToolbox.framework in Frameworks */,
 				437F5693176854D800861D1A /* AVFoundation.framework in Frameworks */,
 				437F5691176854AF00861D1A /* CoreAudio.framework in Frameworks */,
-				437F5681176828C300861D1A /* libpd-ios.a in Frameworks */,
 				437F56491768240F00861D1A /* UIKit.framework in Frameworks */,
 				437F564B1768240F00861D1A /* Foundation.framework in Frameworks */,
 				437F564D1768240F00861D1A /* CoreGraphics.framework in Frameworks */,
@@ -202,16 +202,16 @@
 		437F566E1768241800861D1A /* 3rd-party */ = {
 			isa = PBXGroup;
 			children = (
-				437F56781768253C00861D1A /* libpd.xcodeproj */,
+				43911E3217C6C78B00437117 /* libpd.xcodeproj */,
 			);
 			name = "3rd-party";
 			sourceTree = "<group>";
 		};
-		437F56791768253C00861D1A /* Products */ = {
+		43911E3317C6C78B00437117 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				437F567E1768253C00861D1A /* libpd-ios.a */,
-				437F56801768253C00861D1A /* libpd-osx.a */,
+				43911E3817C6C78B00437117 /* libpd-ios.a */,
+				43911E3A17C6C78B00437117 /* libpd-osx.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -306,7 +306,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				437F5683176828D600861D1A /* PBXTargetDependency */,
+				43911E3C17C6C79200437117 /* PBXTargetDependency */,
 			);
 			name = SpatialPd;
 			productName = SpatialPd;
@@ -335,8 +335,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 437F56791768253C00861D1A /* Products */;
-					ProjectRef = 437F56781768253C00861D1A /* libpd.xcodeproj */;
+					ProductGroup = 43911E3317C6C78B00437117 /* Products */;
+					ProjectRef = 43911E3217C6C78B00437117 /* libpd.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -347,18 +347,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		437F567E1768253C00861D1A /* libpd-ios.a */ = {
+		43911E3817C6C78B00437117 /* libpd-ios.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libpd-ios.a";
-			remoteRef = 437F567D1768253C00861D1A /* PBXContainerItemProxy */;
+			remoteRef = 43911E3717C6C78B00437117 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		437F56801768253C00861D1A /* libpd-osx.a */ = {
+		43911E3A17C6C78B00437117 /* libpd-osx.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libpd-osx.a";
-			remoteRef = 437F567F1768253C00861D1A /* PBXContainerItemProxy */;
+			remoteRef = 43911E3917C6C78B00437117 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -410,10 +410,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		437F5683176828D600861D1A /* PBXTargetDependency */ = {
+		43911E3C17C6C79200437117 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "libpd-ios";
-			targetProxy = 437F5682176828D600861D1A /* PBXContainerItemProxy */;
+			targetProxy = 43911E3B17C6C79200437117 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
