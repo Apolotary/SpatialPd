@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		437F56491768240F00861D1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F56481768240F00861D1A /* UIKit.framework */; };
+		437F564B1768240F00861D1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F564A1768240F00861D1A /* Foundation.framework */; };
+		437F564D1768240F00861D1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F564C1768240F00861D1A /* CoreGraphics.framework */; };
+		437F56531768240F00861D1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 437F56511768240F00861D1A /* InfoPlist.strings */; };
+		437F56551768240F00861D1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F56541768240F00861D1A /* main.m */; };
+		437F56591768240F00861D1A /* SPDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F56581768240F00861D1A /* SPDAppDelegate.m */; };
+		437F565B1768240F00861D1A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F565A1768240F00861D1A /* Default.png */; };
+		437F565D1768240F00861D1A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F565C1768240F00861D1A /* Default@2x.png */; };
+		437F565F1768240F00861D1A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F565E1768240F00861D1A /* Default-568h@2x.png */; };
+		437F56621768240F00861D1A /* SPDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F56611768240F00861D1A /* SPDViewController.m */; };
+		437F56651768240F00861D1A /* SPDViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437F56631768240F00861D1A /* SPDViewController_iPhone.xib */; };
+		437F56681768240F00861D1A /* SPDViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437F56661768240F00861D1A /* SPDViewController_iPad.xib */; };
+		437F5681176828C300861D1A /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F567E1768253C00861D1A /* libpd-ios.a */; };
+		437F568B17684EA600861D1A /* ShyDrums.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568717684EA600861D1A /* ShyDrums.wav */; };
+		437F568C17684EA600861D1A /* ShyGuitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568817684EA600861D1A /* ShyGuitar.wav */; };
+		437F568D17684EA600861D1A /* ShyPiano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568917684EA600861D1A /* ShyPiano.wav */; };
+		437F568E17684EA600861D1A /* ShyBass.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568A17684EA600861D1A /* ShyBass.wav */; };
+		437F5691176854AF00861D1A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F5690176854AF00861D1A /* CoreAudio.framework */; };
+		437F5693176854D800861D1A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F5692176854D800861D1A /* AVFoundation.framework */; };
+		437F569717685A4600861D1A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 437F569617685A4600861D1A /* AudioToolbox.framework */; };
+		438CE2EA1771D79D00B26496 /* spatial1.pd in Resources */ = {isa = PBXBuildFile; fileRef = 438CE2E91771D79D00B26496 /* spatial1.pd */; };
+		4393966E178C495E00991BB7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4393966D178C495E00991BB7 /* CoreMotion.framework */; };
+		43ADDA641770459D0067CA02 /* circle_user1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43ADDA631770459D0067CA02 /* circle_user1.png */; };
+		43ADDA6917716CC10067CA02 /* SPDPdPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDA6817716CC10067CA02 /* SPDPdPatchManager.m */; };
+		43ADDA6C17716CD40067CA02 /* SPDMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDA6B17716CD40067CA02 /* SPDMainModel.m */; };
+		43F0DFA1176AB65C00A2E5BB /* SPDInstrumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F0DFA0176AB65C00A2E5BB /* SPDInstrumentView.m */; };
+		43F0DFA7176AB6E400A2E5BB /* SPDInstrumentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFA6176AB6E400A2E5BB /* SPDInstrumentView.xib */; };
+		43F0DFAF176AB7C800A2E5BB /* circle_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFA9176AB7C800A2E5BB /* circle_user.png */; };
+		43F0DFB0176AB7C800A2E5BB /* circle_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFAA176AB7C800A2E5BB /* circle_orange.png */; };
+		43F0DFB1176AB7C800A2E5BB /* circle_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFAB176AB7C800A2E5BB /* circle_black.png */; };
+		43F0DFB2176AB7C800A2E5BB /* circle_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFAC176AB7C800A2E5BB /* circle_blue.png */; };
+		43F0DFB3176AB7C800A2E5BB /* circle_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFAD176AB7C800A2E5BB /* circle_green.png */; };
+		43F0DFB4176AB7C800A2E5BB /* circle_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFAE176AB7C800A2E5BB /* circle_red.png */; };
+		43F0DFB8176AB98900A2E5BB /* SPDMathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F0DFB7176AB98900A2E5BB /* SPDMathUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		437F567D1768253C00861D1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437F56781768253C00861D1A /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC07E0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+		437F567F1768253C00861D1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437F56781768253C00861D1A /* libpd.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 119013AB1486450C00086F19;
+			remoteInfo = "libpd-osx";
+		};
+		437F5682176828D600861D1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 437F56781768253C00861D1A /* libpd.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC07D0554694100DB518D;
+			remoteInfo = "libpd-ios";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		437F56451768240F00861D1A /* SpatialPd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpatialPd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		437F56481768240F00861D1A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		437F564A1768240F00861D1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		437F564C1768240F00861D1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		437F56501768240F00861D1A /* SpatialPd-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpatialPd-Info.plist"; sourceTree = "<group>"; };
+		437F56521768240F00861D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		437F56541768240F00861D1A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		437F56561768240F00861D1A /* SpatialPd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpatialPd-Prefix.pch"; sourceTree = "<group>"; };
+		437F56571768240F00861D1A /* SPDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDAppDelegate.h; sourceTree = "<group>"; };
+		437F56581768240F00861D1A /* SPDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDAppDelegate.m; sourceTree = "<group>"; };
+		437F565A1768240F00861D1A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		437F565C1768240F00861D1A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		437F565E1768240F00861D1A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		437F56601768240F00861D1A /* SPDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDViewController.h; sourceTree = "<group>"; };
+		437F56611768240F00861D1A /* SPDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDViewController.m; sourceTree = "<group>"; };
+		437F56641768240F00861D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPDViewController_iPhone.xib; sourceTree = "<group>"; };
+		437F56671768240F00861D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPDViewController_iPad.xib; sourceTree = "<group>"; };
+		437F56781768253C00861D1A /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "SpatialPd/pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
+		437F568717684EA600861D1A /* ShyDrums.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyDrums.wav; sourceTree = "<group>"; };
+		437F568817684EA600861D1A /* ShyGuitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyGuitar.wav; sourceTree = "<group>"; };
+		437F568917684EA600861D1A /* ShyPiano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyPiano.wav; sourceTree = "<group>"; };
+		437F568A17684EA600861D1A /* ShyBass.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyBass.wav; sourceTree = "<group>"; };
+		437F5690176854AF00861D1A /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		437F5692176854D800861D1A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		437F5694176854F800861D1A /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		437F569617685A4600861D1A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		438CE2E91771D79D00B26496 /* spatial1.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = spatial1.pd; sourceTree = "<group>"; };
+		4393966D178C495E00991BB7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		43ADDA6017703D6E0067CA02 /* SPDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDConstants.h; sourceTree = "<group>"; };
+		43ADDA631770459D0067CA02 /* circle_user1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_user1.png; sourceTree = "<group>"; };
+		43ADDA661770ADCB0067CA02 /* SPDProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDProtocols.h; sourceTree = "<group>"; };
+		43ADDA6717716CC10067CA02 /* SPDPdPatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDPdPatchManager.h; sourceTree = "<group>"; };
+		43ADDA6817716CC10067CA02 /* SPDPdPatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDPdPatchManager.m; sourceTree = "<group>"; };
+		43ADDA6A17716CD40067CA02 /* SPDMainModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDMainModel.h; sourceTree = "<group>"; };
+		43ADDA6B17716CD40067CA02 /* SPDMainModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDMainModel.m; sourceTree = "<group>"; };
+		43F0DF9F176AB65C00A2E5BB /* SPDInstrumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDInstrumentView.h; sourceTree = "<group>"; };
+		43F0DFA0176AB65C00A2E5BB /* SPDInstrumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDInstrumentView.m; sourceTree = "<group>"; };
+		43F0DFA6176AB6E400A2E5BB /* SPDInstrumentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPDInstrumentView.xib; sourceTree = "<group>"; };
+		43F0DFA9176AB7C800A2E5BB /* circle_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_user.png; sourceTree = "<group>"; };
+		43F0DFAA176AB7C800A2E5BB /* circle_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_orange.png; sourceTree = "<group>"; };
+		43F0DFAB176AB7C800A2E5BB /* circle_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_black.png; sourceTree = "<group>"; };
+		43F0DFAC176AB7C800A2E5BB /* circle_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_blue.png; sourceTree = "<group>"; };
+		43F0DFAD176AB7C800A2E5BB /* circle_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_green.png; sourceTree = "<group>"; };
+		43F0DFAE176AB7C800A2E5BB /* circle_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_red.png; sourceTree = "<group>"; };
+		43F0DFB6176AB98900A2E5BB /* SPDMathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDMathUtils.h; sourceTree = "<group>"; };
+		43F0DFB7176AB98900A2E5BB /* SPDMathUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDMathUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		437F56421768240F00861D1A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4393966E178C495E00991BB7 /* CoreMotion.framework in Frameworks */,
+				437F569717685A4600861D1A /* AudioToolbox.framework in Frameworks */,
+				437F5693176854D800861D1A /* AVFoundation.framework in Frameworks */,
+				437F5691176854AF00861D1A /* CoreAudio.framework in Frameworks */,
+				437F5681176828C300861D1A /* libpd-ios.a in Frameworks */,
+				437F56491768240F00861D1A /* UIKit.framework in Frameworks */,
+				437F564B1768240F00861D1A /* Foundation.framework in Frameworks */,
+				437F564D1768240F00861D1A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		437F563C1768240F00861D1A = {
+			isa = PBXGroup;
+			children = (
+				437F564E1768240F00861D1A /* SpatialPd */,
+				437F56471768240F00861D1A /* Frameworks */,
+				437F56461768240F00861D1A /* Products */,
+				437F566E1768241800861D1A /* 3rd-party */,
+			);
+			sourceTree = "<group>";
+		};
+		437F56461768240F00861D1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				437F56451768240F00861D1A /* SpatialPd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		437F56471768240F00861D1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4393966D178C495E00991BB7 /* CoreMotion.framework */,
+				437F569617685A4600861D1A /* AudioToolbox.framework */,
+				437F5694176854F800861D1A /* AudioUnit.framework */,
+				437F5692176854D800861D1A /* AVFoundation.framework */,
+				437F5690176854AF00861D1A /* CoreAudio.framework */,
+				437F56481768240F00861D1A /* UIKit.framework */,
+				437F564A1768240F00861D1A /* Foundation.framework */,
+				437F564C1768240F00861D1A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		437F564E1768240F00861D1A /* SpatialPd */ = {
+			isa = PBXGroup;
+			children = (
+				43ADDA6D177194A80067CA02 /* Additional Declarations */,
+				43F0DFB5176AB96600A2E5BB /* Model */,
+				43F0DFA3176AB67200A2E5BB /* Custom Views */,
+				43F0DFA2176AB66600A2E5BB /* MainViewController */,
+				437F56571768240F00861D1A /* SPDAppDelegate.h */,
+				437F56581768240F00861D1A /* SPDAppDelegate.m */,
+				437F564F1768240F00861D1A /* Supporting Files */,
+			);
+			path = SpatialPd;
+			sourceTree = "<group>";
+		};
+		437F564F1768240F00861D1A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				43F0DFA8176AB7B700A2E5BB /* Images */,
+				43F0DF9E176AB5F600A2E5BB /* Sounds */,
+				43F0DF9D176AB5E400A2E5BB /* Pd stuff */,
+				437F56501768240F00861D1A /* SpatialPd-Info.plist */,
+				437F56511768240F00861D1A /* InfoPlist.strings */,
+				437F56541768240F00861D1A /* main.m */,
+				437F56561768240F00861D1A /* SpatialPd-Prefix.pch */,
+				437F565A1768240F00861D1A /* Default.png */,
+				437F565C1768240F00861D1A /* Default@2x.png */,
+				437F565E1768240F00861D1A /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		437F566E1768241800861D1A /* 3rd-party */ = {
+			isa = PBXGroup;
+			children = (
+				437F56781768253C00861D1A /* libpd.xcodeproj */,
+			);
+			name = "3rd-party";
+			sourceTree = "<group>";
+		};
+		437F56791768253C00861D1A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				437F567E1768253C00861D1A /* libpd-ios.a */,
+				437F56801768253C00861D1A /* libpd-osx.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43ADDA6D177194A80067CA02 /* Additional Declarations */ = {
+			isa = PBXGroup;
+			children = (
+				43ADDA6017703D6E0067CA02 /* SPDConstants.h */,
+				43ADDA661770ADCB0067CA02 /* SPDProtocols.h */,
+			);
+			name = "Additional Declarations";
+			sourceTree = "<group>";
+		};
+		43F0DF9D176AB5E400A2E5BB /* Pd stuff */ = {
+			isa = PBXGroup;
+			children = (
+				438CE2E91771D79D00B26496 /* spatial1.pd */,
+			);
+			name = "Pd stuff";
+			sourceTree = "<group>";
+		};
+		43F0DF9E176AB5F600A2E5BB /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				437F568717684EA600861D1A /* ShyDrums.wav */,
+				437F568817684EA600861D1A /* ShyGuitar.wav */,
+				437F568917684EA600861D1A /* ShyPiano.wav */,
+				437F568A17684EA600861D1A /* ShyBass.wav */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		43F0DFA2176AB66600A2E5BB /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				437F56601768240F00861D1A /* SPDViewController.h */,
+				437F56611768240F00861D1A /* SPDViewController.m */,
+				437F56661768240F00861D1A /* SPDViewController_iPad.xib */,
+				437F56631768240F00861D1A /* SPDViewController_iPhone.xib */,
+			);
+			name = MainViewController;
+			sourceTree = "<group>";
+		};
+		43F0DFA3176AB67200A2E5BB /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				43F0DF9F176AB65C00A2E5BB /* SPDInstrumentView.h */,
+				43F0DFA0176AB65C00A2E5BB /* SPDInstrumentView.m */,
+				43F0DFA6176AB6E400A2E5BB /* SPDInstrumentView.xib */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+		43F0DFA8176AB7B700A2E5BB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				43ADDA631770459D0067CA02 /* circle_user1.png */,
+				43F0DFA9176AB7C800A2E5BB /* circle_user.png */,
+				43F0DFAA176AB7C800A2E5BB /* circle_orange.png */,
+				43F0DFAB176AB7C800A2E5BB /* circle_black.png */,
+				43F0DFAC176AB7C800A2E5BB /* circle_blue.png */,
+				43F0DFAD176AB7C800A2E5BB /* circle_green.png */,
+				43F0DFAE176AB7C800A2E5BB /* circle_red.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		43F0DFB5176AB96600A2E5BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				43F0DFB6176AB98900A2E5BB /* SPDMathUtils.h */,
+				43F0DFB7176AB98900A2E5BB /* SPDMathUtils.m */,
+				43ADDA6717716CC10067CA02 /* SPDPdPatchManager.h */,
+				43ADDA6817716CC10067CA02 /* SPDPdPatchManager.m */,
+				43ADDA6A17716CD40067CA02 /* SPDMainModel.h */,
+				43ADDA6B17716CD40067CA02 /* SPDMainModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		437F56441768240F00861D1A /* SpatialPd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 437F566B1768240F00861D1A /* Build configuration list for PBXNativeTarget "SpatialPd" */;
+			buildPhases = (
+				437F56411768240F00861D1A /* Sources */,
+				437F56421768240F00861D1A /* Frameworks */,
+				437F56431768240F00861D1A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				437F5683176828D600861D1A /* PBXTargetDependency */,
+			);
+			name = SpatialPd;
+			productName = SpatialPd;
+			productReference = 437F56451768240F00861D1A /* SpatialPd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		437F563D1768240F00861D1A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SPD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Bektur Ryskeldiev";
+			};
+			buildConfigurationList = 437F56401768240F00861D1A /* Build configuration list for PBXProject "SpatialPd" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 437F563C1768240F00861D1A;
+			productRefGroup = 437F56461768240F00861D1A /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 437F56791768253C00861D1A /* Products */;
+					ProjectRef = 437F56781768253C00861D1A /* libpd.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				437F56441768240F00861D1A /* SpatialPd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		437F567E1768253C00861D1A /* libpd-ios.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-ios.a";
+			remoteRef = 437F567D1768253C00861D1A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		437F56801768253C00861D1A /* libpd-osx.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libpd-osx.a";
+			remoteRef = 437F567F1768253C00861D1A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		437F56431768240F00861D1A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437F56531768240F00861D1A /* InfoPlist.strings in Resources */,
+				437F565B1768240F00861D1A /* Default.png in Resources */,
+				437F565D1768240F00861D1A /* Default@2x.png in Resources */,
+				437F565F1768240F00861D1A /* Default-568h@2x.png in Resources */,
+				437F56651768240F00861D1A /* SPDViewController_iPhone.xib in Resources */,
+				437F56681768240F00861D1A /* SPDViewController_iPad.xib in Resources */,
+				437F568B17684EA600861D1A /* ShyDrums.wav in Resources */,
+				437F568C17684EA600861D1A /* ShyGuitar.wav in Resources */,
+				437F568D17684EA600861D1A /* ShyPiano.wav in Resources */,
+				437F568E17684EA600861D1A /* ShyBass.wav in Resources */,
+				43F0DFA7176AB6E400A2E5BB /* SPDInstrumentView.xib in Resources */,
+				43F0DFAF176AB7C800A2E5BB /* circle_user.png in Resources */,
+				43F0DFB0176AB7C800A2E5BB /* circle_orange.png in Resources */,
+				43F0DFB1176AB7C800A2E5BB /* circle_black.png in Resources */,
+				43F0DFB2176AB7C800A2E5BB /* circle_blue.png in Resources */,
+				43F0DFB3176AB7C800A2E5BB /* circle_green.png in Resources */,
+				43F0DFB4176AB7C800A2E5BB /* circle_red.png in Resources */,
+				43ADDA641770459D0067CA02 /* circle_user1.png in Resources */,
+				438CE2EA1771D79D00B26496 /* spatial1.pd in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		437F56411768240F00861D1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				437F56551768240F00861D1A /* main.m in Sources */,
+				437F56591768240F00861D1A /* SPDAppDelegate.m in Sources */,
+				437F56621768240F00861D1A /* SPDViewController.m in Sources */,
+				43F0DFA1176AB65C00A2E5BB /* SPDInstrumentView.m in Sources */,
+				43F0DFB8176AB98900A2E5BB /* SPDMathUtils.m in Sources */,
+				43ADDA6917716CC10067CA02 /* SPDPdPatchManager.m in Sources */,
+				43ADDA6C17716CD40067CA02 /* SPDMainModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		437F5683176828D600861D1A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "libpd-ios";
+			targetProxy = 437F5682176828D600861D1A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		437F56511768240F00861D1A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				437F56521768240F00861D1A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		437F56631768240F00861D1A /* SPDViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				437F56641768240F00861D1A /* en */,
+			);
+			name = SPDViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		437F56661768240F00861D1A /* SPDViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				437F56671768240F00861D1A /* en */,
+			);
+			name = SPDViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		437F56691768240F00861D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		437F566A1768240F00861D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		437F566C1768240F00861D1A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpatialPd/SpatialPd-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../pd-for-ios/libpd/objc";
+				INFOPLIST_FILE = "SpatialPd/SpatialPd-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		437F566D1768240F00861D1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpatialPd/SpatialPd-Prefix.pch";
+				HEADER_SEARCH_PATHS = "../pd-for-ios/libpd/objc";
+				INFOPLIST_FILE = "SpatialPd/SpatialPd-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		437F56401768240F00861D1A /* Build configuration list for PBXProject "SpatialPd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437F56691768240F00861D1A /* Debug */,
+				437F566A1768240F00861D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		437F566B1768240F00861D1A /* Build configuration list for PBXNativeTarget "SpatialPd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				437F566C1768240F00861D1A /* Debug */,
+				437F566D1768240F00861D1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 437F563D1768240F00861D1A /* Project object */;
+}
