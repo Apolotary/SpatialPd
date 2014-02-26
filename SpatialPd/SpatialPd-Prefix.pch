@@ -19,3 +19,6 @@
 #else
 #define DebugLog(...) while(0)
 #endif
+
+#warning Comment out later
+#define NSLog

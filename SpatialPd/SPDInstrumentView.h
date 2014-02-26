@@ -16,19 +16,21 @@
     IBOutlet UILabel     *_labelXPosition;
     IBOutlet UILabel     *_labelYPosition;
     NSString             *_name;
-    UIImage              *_icon;
+    UIColor              *_color;
     CGPoint              _startLocation;
 }
 
 @property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) UIImage  *icon;
+@property (nonatomic, strong) UIColor  *color;
+
 @property (nonatomic, weak) id<SPDInstrumentViewProtocol> delegate;
 
 @property (nonatomic) UIImageView *circleView;
 @property (nonatomic) UILabel     *labelInstrument;
 
-- (void) setImage: (UIImage *)  image
+- (void) setColor: (UIColor *) color
           andName: (NSString *) name;
 - (void) updateLocationLabels;
+- (void) drawCenter;
 
 @end

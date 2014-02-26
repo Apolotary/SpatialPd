@@ -10,13 +10,5 @@
 #import "SPDProtocols.h"
 
 @interface SPDViewController : UIViewController <SPDInstrumentViewProtocol, SPDListenerAngleProtocol>
-{
-    IBOutlet UILabel *_labelInstrument;
-    IBOutlet UILabel *_labelRad;
-    IBOutlet UILabel *_labelTheta;
-    IBOutlet UILabel *_labelITD;
-    IBOutlet UILabel *_labelRotationAngle;
-    IBOutlet UILabel *_labelAngle;
-}
 
 @end

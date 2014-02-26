@@ -44,6 +44,7 @@
 }
 
 #pragma mark - PdController
+
 - (void)setAudioActive:(BOOL)active {
 	[_audioController setActive:active];
 }
@@ -76,6 +77,25 @@
     NSLog(@"Sending amplitude modifier: %f \n to: %@", ampValue, instrumentName);
     
     [PdBase sendFloat:ampValue toReceiver:messageReceiver];
+}
+
+- (void)sendSwitchValue: (BOOL) isOn
+           toInstrument: (NSString *) instrumentName
+{
+    NSString *messageReceiver = [NSString stringWithFormat:@"%@_SWITCH", instrumentName];
+    
+    NSLog(@"Sending switch statement: %@ to instrument: %@", isOn ? @"ON" : @"OFF", instrumentName);
+    
+    if (isOn)
+    {
+        [PdBase sendFloat:1.0 toReceiver:messageReceiver];
+        [self sendAmplitudeModifierValue:0.25 toInstrument:instrumentName];
+    }
+    else
+    {
+        [self sendAmplitudeModifierValue:0.0 toInstrument:instrumentName];
+        [PdBase sendFloat:0.0 toReceiver:messageReceiver];
+    }
 }
 
 @end

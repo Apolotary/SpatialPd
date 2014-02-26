@@ -121,4 +121,10 @@ static void singleton_remover() {
     }
 }
 
+- (void) switchInstrument: (NSString *) instrumentName
+                     toOn: (BOOL) isOn
+{
+    [_patchManager sendSwitchValue:isOn toInstrument:instrumentName];
+}
+
 @end

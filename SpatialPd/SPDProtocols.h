@@ -20,3 +20,10 @@
 - (void) listenerAngleChanged: (float) newAngle;
 
 @end
+
+@protocol SPDControlsViewProtocol <NSObject>
+
+- (void) instrument: (NSString *) instrumentName
+    wasSwitchedToOn: (BOOL) isOn;
+
+@end

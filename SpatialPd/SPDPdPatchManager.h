@@ -19,4 +19,7 @@
 - (void)sendAmplitudeModifierValue: (float) ampValue
                       toInstrument: (NSString *) instrumentName;
 
+- (void)sendSwitchValue: (BOOL) isOn
+           toInstrument: (NSString *) instrumentName;
+
 @end

@@ -8,15 +8,20 @@
 
 #import "SPDViewController.h"
 #import "SPDInstrumentView.h"
+#import "SPDControlsView.h"
+#import "SPDLogView.h"
 #import "SPDMainModel.h"
 
 //TODO: remove later
 #import "SPDMathUtils.h"
 
-@interface SPDViewController () <UIGestureRecognizerDelegate>
+@interface SPDViewController () <UIGestureRecognizerDelegate, SPDControlsViewProtocol>
 {
     SPDMainModel        *_mainModel;
     SPDInstrumentView   *_listenerView;
+    SPDControlsView     *_controlsView;
+    SPDLogView          *_logView;
+    
     NSMutableArray      *_instrumentViewsArray;
     NSMutableDictionary *_prevGestureLocations;
     CGFloat              _listenerAngle;
@@ -49,7 +54,7 @@
     //TODO: pass array from somewhere else (like JSON/plist for instance), using hardcode for now
     
     NSArray *instrumentNames = @[NAME_BASS, NAME_DRUMS, NAME_GUITAR, NAME_LISTENER, NAME_PIANO];
-    NSArray *instrumentIcons = @[ICON_BASS, ICON_DRUMS, ICON_GUITAR, ICON_LISTENER, ICON_PIANO];
+    NSArray *instrumentColors = @[[UIColor redColor], [UIColor blueColor], [UIColor orangeColor], [UIColor lightGrayColor], [UIColor greenColor]];
     NSMutableArray *instrumentLocations = [[NSMutableArray alloc] init];
     
     [instrumentLocations addObject:[NSValue valueWithCGPoint:CGPointMake(200, 200)]];
@@ -66,12 +71,12 @@
         {
             SPDInstrumentView *instrView = (SPDInstrumentView *) obj;
             
-            UIImage *instrImage = [UIImage imageNamed:[instrumentIcons objectAtIndex:i]];
+            UIColor *instrColor = [instrumentColors objectAtIndex:i];
             CGPoint instrCenter = [[instrumentLocations objectAtIndex:i] CGPointValue];
             
             [self.view addSubview:instrView];
             [instrView setCenter:instrCenter];
-            [instrView setImage:instrImage andName:[instrumentNames objectAtIndex:i]];
+            [instrView setColor:instrColor andName:[instrumentNames objectAtIndex:i]];
             [instrView setDelegate:self];
             
             UIPanGestureRecognizer *panRecognizer = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panDetected:)];
@@ -80,6 +85,7 @@
             
             if ([instrView.name isEqualToString:NAME_LISTENER])
             {
+                [instrView drawCenter];
                 UIRotationGestureRecognizer *rotationRecognizer = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(rotationDetected:)];
                 _listenerView = instrView;
                 [self.view addGestureRecognizer:rotationRecognizer];
@@ -90,6 +96,38 @@
     }
 
     NSLog(@"%@", _instrumentViewsArray.description);
+}
+
+#pragma mark - Placing helper views
+
+- (void) placeHelperViews
+{
+    NSArray *nibs = [[NSBundle mainBundle] loadNibNamed:@"SPDLogView" owner:nil options:nil];
+    
+    for (id obj in nibs)
+    {
+        if ([obj isKindOfClass:[SPDLogView class]])
+        {
+            _logView = (SPDLogView *) obj;
+        }
+    }
+    
+    nibs = [[NSBundle mainBundle] loadNibNamed:@"SPDControlsView" owner:nil options:nil];
+    
+    for (id obj in nibs)
+    {
+        if ([obj isKindOfClass:[SPDControlsView class]])
+        {
+            _controlsView = (SPDControlsView *) obj;
+            [_controlsView updateColors];
+            [_controlsView setDelegate:self];
+        }
+    }
+    
+    [self.view addSubview:_controlsView];
+    [self.view addSubview:_logView];
+    [_controlsView setCenter:CGPointMake(self.view.frame.size.width - _controlsView.bounds.size.width / 2, _logView.bounds.size.height / 2)];
+    [_logView setCenter:CGPointMake(self.view.frame.size.width - _controlsView.bounds.size.width / 2, self.view.frame.size.height - _controlsView.bounds.size.height / 2)];
 }
 
 #pragma mark - Instrument location methods
@@ -120,25 +158,35 @@
                                                       relocationTo:instrumentLocation
                                                 relativetoListener:_listenerView.center];
         
-        [_labelInstrument setText:[NSString stringWithFormat:@"Instrument: %@", instrumentName]];
+//        [_labelInstrument setText:[NSString stringWithFormat:@"Instrument: %@", instrumentName]];
         
         float radius = [[dictionary objectForKey:POLAR_RADIUS_KEY] floatValue];
         float theta  = [[dictionary objectForKey:POLAR_THETA_KEY] floatValue];
         float ITD    = [[dictionary objectForKey:ITD_KEY] floatValue];
         
-        [_labelRad setText:[NSString stringWithFormat:@"Rad: %f", radius]];
-        [_labelTheta setText:[NSString stringWithFormat:@"θ: %f", theta]];
-        [_labelITD setText:[NSString stringWithFormat:@"ITD: %f", ITD]];
+//        [_labelRad setText:[NSString stringWithFormat:@"Rad: %f", radius]];
+//        [_labelTheta setText:[NSString stringWithFormat:@"θ: %f", theta]];
+//        [_labelITD setText:[NSString stringWithFormat:@"ITD: %f", ITD]];
+        
+        [_logView updateInstrumentLabel:instrumentName];
+        [_logView updateRadLabel:radius];
+        [_logView updateThetaLabel:theta];
+        [_logView updateITDLabel:ITD];
     }
     else // calculate listener's relocation for all instruments
     {
         NSArray *instrumentsLocationsArray = [self gatherInstrumentLocationsExceptListener];
         
-        [_labelInstrument setText:[NSString stringWithFormat:@"Instrument: %@", instrumentName]];
+//        [_labelInstrument setText:[NSString stringWithFormat:@"Instrument: %@", instrumentName]];
+//        
+//        [_labelRad setText:[NSString stringWithFormat:@"Rad: not applicable"]];
+//        [_labelTheta setText:[NSString stringWithFormat:@"θ: not applicable"]];
+//        [_labelITD setText:[NSString stringWithFormat:@"ITD: not applicable"]];
         
-        [_labelRad setText:[NSString stringWithFormat:@"Rad: not applicable"]];
-        [_labelTheta setText:[NSString stringWithFormat:@"θ: not applicable"]];
-        [_labelITD setText:[NSString stringWithFormat:@"ITD: not applicable"]];
+        [_logView updateInstrumentLabel:instrumentName];
+        [_logView updateRadLabel:0.0];
+        [_logView updateThetaLabel:0.0];
+        [_logView updateITDLabel:0.0];
         
         [_mainModel calculateListenerRelocationTo:instrumentLocation
                                 forAllInstruments:instrumentsLocationsArray];
@@ -152,7 +200,8 @@
     NSLog(@"-- Angle: %f", RADIANS_TO_DEGREES(newAngle));
  
     
-    [_labelRotationAngle setText:[NSString stringWithFormat:@"Rotation angle: %f", RADIANS_TO_DEGREES(newAngle)]];
+//    [_labelRotationAngle setText:[NSString stringWithFormat:@"Rotation angle: %f", RADIANS_TO_DEGREES(newAngle)]];
+    [_logView updateRotationLabel:RADIANS_TO_DEGREES(newAngle)];
     
     _listenerAngle += RADIANS_TO_DEGREES(newAngle);
     
@@ -172,8 +221,8 @@
     
     _listenerView.transform = CGAffineTransformRotate(_listenerView.transform, newAngle);
 
-    [_labelAngle setText:[NSString stringWithFormat:@"Listener's angle: %f", _listenerAngle]];
-        
+    [_logView updateListenerLabel:_listenerAngle];
+    
     [_mainModel setListenerAngle:DEGREES_TO_RADIANS(_listenerAngle)];
     [self instrumentMoved:NAME_LISTENER toLocation:_listenerView.center];
 }
@@ -216,6 +265,14 @@
     }
 }
 
+#pragma mark - Controls view protocol
+
+- (void) instrument: (NSString *) instrumentName
+    wasSwitchedToOn: (BOOL) isOn
+{
+    [_mainModel switchInstrument:instrumentName toOn:isOn];
+}
+
 
 #pragma mark - View lifecycle
 
@@ -226,6 +283,7 @@
     [_mainModel setDelegate:self];
     _instrumentViewsArray = [[NSMutableArray alloc] init];
     _prevGestureLocations = [[NSMutableDictionary alloc] init];
+    [self placeHelperViews];
 	[self placeInstrumentViews];
     
     NSArray *instruments = [self gatherInstrumentLocationsExceptListener];

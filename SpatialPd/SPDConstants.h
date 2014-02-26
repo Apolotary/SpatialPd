@@ -11,12 +11,6 @@
 // ------------------------
 #pragma mark - Instruments icons and names
 
-#define ICON_GUITAR   @"circle_orange.png"
-#define ICON_BASS     @"circle_black.png"
-#define ICON_DRUMS    @"circle_blue.png"
-#define ICON_PIANO    @"circle_green.png"
-#define ICON_LISTENER @"circle_user1.png"
-
 #define NAME_GUITAR   @"guitar"
 #define NAME_BASS     @"bass"
 #define NAME_DRUMS    @"drums"

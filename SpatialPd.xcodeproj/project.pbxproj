@@ -29,18 +29,15 @@
 		438CE2EA1771D79D00B26496 /* spatial1.pd in Resources */ = {isa = PBXBuildFile; fileRef = 438CE2E91771D79D00B26496 /* spatial1.pd */; };
 		43911E3D17C6C79500437117 /* libpd-ios.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43911E3817C6C78B00437117 /* libpd-ios.a */; };
 		4393966E178C495E00991BB7 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4393966D178C495E00991BB7 /* CoreMotion.framework */; };
-		43ADDA641770459D0067CA02 /* circle_user1.png in Resources */ = {isa = PBXBuildFile; fileRef = 43ADDA631770459D0067CA02 /* circle_user1.png */; };
 		43ADDA6917716CC10067CA02 /* SPDPdPatchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDA6817716CC10067CA02 /* SPDPdPatchManager.m */; };
 		43ADDA6C17716CD40067CA02 /* SPDMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 43ADDA6B17716CD40067CA02 /* SPDMainModel.m */; };
 		43F0DFA1176AB65C00A2E5BB /* SPDInstrumentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F0DFA0176AB65C00A2E5BB /* SPDInstrumentView.m */; };
 		43F0DFA7176AB6E400A2E5BB /* SPDInstrumentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFA6176AB6E400A2E5BB /* SPDInstrumentView.xib */; };
-		43F0DFAF176AB7C800A2E5BB /* circle_user.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFA9176AB7C800A2E5BB /* circle_user.png */; };
-		43F0DFB0176AB7C800A2E5BB /* circle_orange.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFAA176AB7C800A2E5BB /* circle_orange.png */; };
-		43F0DFB1176AB7C800A2E5BB /* circle_black.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFAB176AB7C800A2E5BB /* circle_black.png */; };
-		43F0DFB2176AB7C800A2E5BB /* circle_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFAC176AB7C800A2E5BB /* circle_blue.png */; };
-		43F0DFB3176AB7C800A2E5BB /* circle_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFAD176AB7C800A2E5BB /* circle_green.png */; };
-		43F0DFB4176AB7C800A2E5BB /* circle_red.png in Resources */ = {isa = PBXBuildFile; fileRef = 43F0DFAE176AB7C800A2E5BB /* circle_red.png */; };
 		43F0DFB8176AB98900A2E5BB /* SPDMathUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 43F0DFB7176AB98900A2E5BB /* SPDMathUtils.m */; };
+		43FDAF10180858AE00E07DA5 /* SPDLogView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FDAF0F180858AE00E07DA5 /* SPDLogView.m */; };
+		43FDAF12180858C200E07DA5 /* SPDLogView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FDAF11180858C200E07DA5 /* SPDLogView.xib */; };
+		43FDAF15180858D300E07DA5 /* SPDControlsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43FDAF14180858D300E07DA5 /* SPDControlsView.m */; };
+		43FDAF17180858E100E07DA5 /* SPDControlsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FDAF16180858E100E07DA5 /* SPDControlsView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,7 +94,6 @@
 		43911E3217C6C78B00437117 /* libpd.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = libpd.xcodeproj; path = "SpatialPd/pd-for-ios/libpd/libpd.xcodeproj"; sourceTree = "<group>"; };
 		4393966D178C495E00991BB7 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		43ADDA6017703D6E0067CA02 /* SPDConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDConstants.h; sourceTree = "<group>"; };
-		43ADDA631770459D0067CA02 /* circle_user1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_user1.png; sourceTree = "<group>"; };
 		43ADDA661770ADCB0067CA02 /* SPDProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDProtocols.h; sourceTree = "<group>"; };
 		43ADDA6717716CC10067CA02 /* SPDPdPatchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDPdPatchManager.h; sourceTree = "<group>"; };
 		43ADDA6817716CC10067CA02 /* SPDPdPatchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDPdPatchManager.m; sourceTree = "<group>"; };
@@ -106,14 +102,14 @@
 		43F0DF9F176AB65C00A2E5BB /* SPDInstrumentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDInstrumentView.h; sourceTree = "<group>"; };
 		43F0DFA0176AB65C00A2E5BB /* SPDInstrumentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDInstrumentView.m; sourceTree = "<group>"; };
 		43F0DFA6176AB6E400A2E5BB /* SPDInstrumentView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPDInstrumentView.xib; sourceTree = "<group>"; };
-		43F0DFA9176AB7C800A2E5BB /* circle_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_user.png; sourceTree = "<group>"; };
-		43F0DFAA176AB7C800A2E5BB /* circle_orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_orange.png; sourceTree = "<group>"; };
-		43F0DFAB176AB7C800A2E5BB /* circle_black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_black.png; sourceTree = "<group>"; };
-		43F0DFAC176AB7C800A2E5BB /* circle_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_blue.png; sourceTree = "<group>"; };
-		43F0DFAD176AB7C800A2E5BB /* circle_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_green.png; sourceTree = "<group>"; };
-		43F0DFAE176AB7C800A2E5BB /* circle_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle_red.png; sourceTree = "<group>"; };
 		43F0DFB6176AB98900A2E5BB /* SPDMathUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDMathUtils.h; sourceTree = "<group>"; };
 		43F0DFB7176AB98900A2E5BB /* SPDMathUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDMathUtils.m; sourceTree = "<group>"; };
+		43FDAF0E180858AE00E07DA5 /* SPDLogView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDLogView.h; sourceTree = "<group>"; };
+		43FDAF0F180858AE00E07DA5 /* SPDLogView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDLogView.m; sourceTree = "<group>"; };
+		43FDAF11180858C200E07DA5 /* SPDLogView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPDLogView.xib; sourceTree = "<group>"; };
+		43FDAF13180858D300E07DA5 /* SPDControlsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPDControlsView.h; sourceTree = "<group>"; };
+		43FDAF14180858D300E07DA5 /* SPDControlsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPDControlsView.m; sourceTree = "<group>"; };
+		43FDAF16180858E100E07DA5 /* SPDControlsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SPDControlsView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +257,12 @@
 				43F0DF9F176AB65C00A2E5BB /* SPDInstrumentView.h */,
 				43F0DFA0176AB65C00A2E5BB /* SPDInstrumentView.m */,
 				43F0DFA6176AB6E400A2E5BB /* SPDInstrumentView.xib */,
+				43FDAF0E180858AE00E07DA5 /* SPDLogView.h */,
+				43FDAF0F180858AE00E07DA5 /* SPDLogView.m */,
+				43FDAF11180858C200E07DA5 /* SPDLogView.xib */,
+				43FDAF13180858D300E07DA5 /* SPDControlsView.h */,
+				43FDAF14180858D300E07DA5 /* SPDControlsView.m */,
+				43FDAF16180858E100E07DA5 /* SPDControlsView.xib */,
 			);
 			name = "Custom Views";
 			sourceTree = "<group>";
@@ -268,13 +270,6 @@
 		43F0DFA8176AB7B700A2E5BB /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				43ADDA631770459D0067CA02 /* circle_user1.png */,
-				43F0DFA9176AB7C800A2E5BB /* circle_user.png */,
-				43F0DFAA176AB7C800A2E5BB /* circle_orange.png */,
-				43F0DFAB176AB7C800A2E5BB /* circle_black.png */,
-				43F0DFAC176AB7C800A2E5BB /* circle_blue.png */,
-				43F0DFAD176AB7C800A2E5BB /* circle_green.png */,
-				43F0DFAE176AB7C800A2E5BB /* circle_red.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -376,16 +371,11 @@
 				437F56681768240F00861D1A /* SPDViewController_iPad.xib in Resources */,
 				437F568B17684EA600861D1A /* ShyDrums.wav in Resources */,
 				437F568C17684EA600861D1A /* ShyGuitar.wav in Resources */,
+				43FDAF17180858E100E07DA5 /* SPDControlsView.xib in Resources */,
 				437F568D17684EA600861D1A /* ShyPiano.wav in Resources */,
 				437F568E17684EA600861D1A /* ShyBass.wav in Resources */,
 				43F0DFA7176AB6E400A2E5BB /* SPDInstrumentView.xib in Resources */,
-				43F0DFAF176AB7C800A2E5BB /* circle_user.png in Resources */,
-				43F0DFB0176AB7C800A2E5BB /* circle_orange.png in Resources */,
-				43F0DFB1176AB7C800A2E5BB /* circle_black.png in Resources */,
-				43F0DFB2176AB7C800A2E5BB /* circle_blue.png in Resources */,
-				43F0DFB3176AB7C800A2E5BB /* circle_green.png in Resources */,
-				43F0DFB4176AB7C800A2E5BB /* circle_red.png in Resources */,
-				43ADDA641770459D0067CA02 /* circle_user1.png in Resources */,
+				43FDAF12180858C200E07DA5 /* SPDLogView.xib in Resources */,
 				438CE2EA1771D79D00B26496 /* spatial1.pd in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -400,8 +390,10 @@
 				437F56551768240F00861D1A /* main.m in Sources */,
 				437F56591768240F00861D1A /* SPDAppDelegate.m in Sources */,
 				437F56621768240F00861D1A /* SPDViewController.m in Sources */,
+				43FDAF10180858AE00E07DA5 /* SPDLogView.m in Sources */,
 				43F0DFA1176AB65C00A2E5BB /* SPDInstrumentView.m in Sources */,
 				43F0DFB8176AB98900A2E5BB /* SPDMathUtils.m in Sources */,
+				43FDAF15180858D300E07DA5 /* SPDControlsView.m in Sources */,
 				43ADDA6917716CC10067CA02 /* SPDPdPatchManager.m in Sources */,
 				43ADDA6C17716CD40067CA02 /* SPDMainModel.m in Sources */,
 			);

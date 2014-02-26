@@ -27,4 +27,7 @@
 - (void) calculateListenerRelocationTo: (CGPoint) listenerLocation
                      forAllInstruments: (NSArray *) instruments;   // Dictionaries with name/coordinates pairs
 
+- (void) switchInstrument: (NSString *) instrumentName
+                     toOn: (BOOL) isOn;
+
 @end
