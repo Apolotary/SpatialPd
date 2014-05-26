@@ -17,7 +17,6 @@
 		437F565D1768240F00861D1A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F565C1768240F00861D1A /* Default@2x.png */; };
 		437F565F1768240F00861D1A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F565E1768240F00861D1A /* Default-568h@2x.png */; };
 		437F56621768240F00861D1A /* SPDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F56611768240F00861D1A /* SPDViewController.m */; };
-		437F56651768240F00861D1A /* SPDViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437F56631768240F00861D1A /* SPDViewController_iPhone.xib */; };
 		437F56681768240F00861D1A /* SPDViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437F56661768240F00861D1A /* SPDViewController_iPad.xib */; };
 		437F568B17684EA600861D1A /* ShyDrums.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568717684EA600861D1A /* ShyDrums.wav */; };
 		437F568C17684EA600861D1A /* ShyGuitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568817684EA600861D1A /* ShyGuitar.wav */; };
@@ -80,7 +79,6 @@
 		437F565E1768240F00861D1A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		437F56601768240F00861D1A /* SPDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDViewController.h; sourceTree = "<group>"; };
 		437F56611768240F00861D1A /* SPDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDViewController.m; sourceTree = "<group>"; };
-		437F56641768240F00861D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPDViewController_iPhone.xib; sourceTree = "<group>"; };
 		437F56671768240F00861D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPDViewController_iPad.xib; sourceTree = "<group>"; };
 		437F568717684EA600861D1A /* ShyDrums.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyDrums.wav; sourceTree = "<group>"; };
 		437F568817684EA600861D1A /* ShyGuitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyGuitar.wav; sourceTree = "<group>"; };
@@ -246,7 +244,6 @@
 				437F56601768240F00861D1A /* SPDViewController.h */,
 				437F56611768240F00861D1A /* SPDViewController.m */,
 				437F56661768240F00861D1A /* SPDViewController_iPad.xib */,
-				437F56631768240F00861D1A /* SPDViewController_iPhone.xib */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -367,7 +364,6 @@
 				437F565B1768240F00861D1A /* Default.png in Resources */,
 				437F565D1768240F00861D1A /* Default@2x.png in Resources */,
 				437F565F1768240F00861D1A /* Default-568h@2x.png in Resources */,
-				437F56651768240F00861D1A /* SPDViewController_iPhone.xib in Resources */,
 				437F56681768240F00861D1A /* SPDViewController_iPad.xib in Resources */,
 				437F568B17684EA600861D1A /* ShyDrums.wav in Resources */,
 				437F568C17684EA600861D1A /* ShyGuitar.wav in Resources */,
@@ -416,14 +412,6 @@
 				437F56521768240F00861D1A /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		437F56631768240F00861D1A /* SPDViewController_iPhone.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				437F56641768240F00861D1A /* en */,
-			);
-			name = SPDViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
 		437F56661768240F00861D1A /* SPDViewController_iPad.xib */ = {
@@ -503,6 +491,7 @@
 				HEADER_SEARCH_PATHS = "../pd-for-ios/libpd/objc";
 				INFOPLIST_FILE = "SpatialPd/SpatialPd-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -515,6 +504,7 @@
 				HEADER_SEARCH_PATHS = "../pd-for-ios/libpd/objc";
 				INFOPLIST_FILE = "SpatialPd/SpatialPd-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
