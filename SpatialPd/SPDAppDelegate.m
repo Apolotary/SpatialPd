@@ -17,12 +17,7 @@
     [SPDMainModel sharedInstance];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        self.viewController = [[SPDViewController alloc] initWithNibName:@"SPDViewController_iPhone" bundle:nil];
-    } else {
-        self.viewController = [[SPDViewController alloc] initWithNibName:@"SPDViewController_iPad" bundle:nil];
-    }
+    self.viewController = [[SPDViewController alloc] initWithNibName:@"SPDViewController_iPad" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;
