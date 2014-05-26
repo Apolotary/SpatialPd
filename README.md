@@ -9,6 +9,6 @@ The aim of this project is to explore virtual sound environments with mobile dev
 
 --
 
-![Screenshot](http://i.imgur.com/vTK9RgV.png)
+![Screenshot](http://i.imgur.com/Bnvi2Wc.png)
 
 [Related paper](https://drive.google.com/file/d/0B8sCNsXuv-inSklpdFRNT0FPTlk/edit?usp=sharing)
