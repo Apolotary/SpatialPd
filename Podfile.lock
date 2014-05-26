@@ -1,10 +1,21 @@
 PODS:
+  - CocoaLumberjack (1.9.0):
+    - CocoaLumberjack/CLI
+    - CocoaLumberjack/Core
+    - CocoaLumberjack/Extensions
+  - CocoaLumberjack/CLI (1.9.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Core (1.9.0)
+  - CocoaLumberjack/Extensions (1.9.0):
+    - CocoaLumberjack/Core
   - libpd (0.7.0)
 
 DEPENDENCIES:
+  - CocoaLumberjack (~> 1.9)
   - libpd (~> 0.7)
 
 SPEC CHECKSUMS:
+  CocoaLumberjack: 5766cdd1d0a24bcf15a133c6023747346bf786dd
   libpd: f9e63d090e284438826f9b2fdc0810dbb9889e6f
 
 COCOAPODS: 0.32.1

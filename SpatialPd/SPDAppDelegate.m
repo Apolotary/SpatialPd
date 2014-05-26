@@ -17,7 +17,7 @@
     [SPDMainModel sharedInstance];
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.viewController = [[SPDViewController alloc] initWithNibName:@"SPDViewController_iPad" bundle:nil];
+    self.viewController = [[SPDViewController alloc] initWithNibName:@"SPDViewController" bundle:nil];
     self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
     return YES;

@@ -13,11 +13,8 @@
 		437F56531768240F00861D1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 437F56511768240F00861D1A /* InfoPlist.strings */; };
 		437F56551768240F00861D1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F56541768240F00861D1A /* main.m */; };
 		437F56591768240F00861D1A /* SPDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F56581768240F00861D1A /* SPDAppDelegate.m */; };
-		437F565B1768240F00861D1A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F565A1768240F00861D1A /* Default.png */; };
-		437F565D1768240F00861D1A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F565C1768240F00861D1A /* Default@2x.png */; };
-		437F565F1768240F00861D1A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 437F565E1768240F00861D1A /* Default-568h@2x.png */; };
 		437F56621768240F00861D1A /* SPDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 437F56611768240F00861D1A /* SPDViewController.m */; };
-		437F56681768240F00861D1A /* SPDViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437F56661768240F00861D1A /* SPDViewController_iPad.xib */; };
+		437F56681768240F00861D1A /* SPDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 437F56661768240F00861D1A /* SPDViewController.xib */; };
 		437F568B17684EA600861D1A /* ShyDrums.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568717684EA600861D1A /* ShyDrums.wav */; };
 		437F568C17684EA600861D1A /* ShyGuitar.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568817684EA600861D1A /* ShyGuitar.wav */; };
 		437F568D17684EA600861D1A /* ShyPiano.wav in Resources */ = {isa = PBXBuildFile; fileRef = 437F568917684EA600861D1A /* ShyPiano.wav */; };
@@ -52,12 +49,9 @@
 		437F56561768240F00861D1A /* SpatialPd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpatialPd-Prefix.pch"; sourceTree = "<group>"; };
 		437F56571768240F00861D1A /* SPDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDAppDelegate.h; sourceTree = "<group>"; };
 		437F56581768240F00861D1A /* SPDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDAppDelegate.m; sourceTree = "<group>"; };
-		437F565A1768240F00861D1A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		437F565C1768240F00861D1A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		437F565E1768240F00861D1A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		437F56601768240F00861D1A /* SPDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPDViewController.h; sourceTree = "<group>"; };
 		437F56611768240F00861D1A /* SPDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPDViewController.m; sourceTree = "<group>"; };
-		437F56671768240F00861D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPDViewController_iPad.xib; sourceTree = "<group>"; };
+		437F56671768240F00861D1A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SPDViewController.xib; sourceTree = "<group>"; };
 		437F568717684EA600861D1A /* ShyDrums.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyDrums.wav; sourceTree = "<group>"; };
 		437F568817684EA600861D1A /* ShyGuitar.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyGuitar.wav; sourceTree = "<group>"; };
 		437F568917684EA600861D1A /* ShyPiano.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ShyPiano.wav; sourceTree = "<group>"; };
@@ -158,16 +152,12 @@
 		437F564F1768240F00861D1A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				43F0DFA8176AB7B700A2E5BB /* Images */,
 				43F0DF9E176AB5F600A2E5BB /* Sounds */,
 				43F0DF9D176AB5E400A2E5BB /* Pd stuff */,
 				437F56501768240F00861D1A /* SpatialPd-Info.plist */,
 				437F56511768240F00861D1A /* InfoPlist.strings */,
 				437F56541768240F00861D1A /* main.m */,
 				437F56561768240F00861D1A /* SpatialPd-Prefix.pch */,
-				437F565A1768240F00861D1A /* Default.png */,
-				437F565C1768240F00861D1A /* Default@2x.png */,
-				437F565E1768240F00861D1A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -212,7 +202,7 @@
 			children = (
 				437F56601768240F00861D1A /* SPDViewController.h */,
 				437F56611768240F00861D1A /* SPDViewController.m */,
-				437F56661768240F00861D1A /* SPDViewController_iPad.xib */,
+				437F56661768240F00861D1A /* SPDViewController.xib */,
 			);
 			name = MainViewController;
 			sourceTree = "<group>";
@@ -231,13 +221,6 @@
 				43FDAF16180858E100E07DA5 /* SPDControlsView.xib */,
 			);
 			name = "Custom Views";
-			sourceTree = "<group>";
-		};
-		43F0DFA8176AB7B700A2E5BB /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Images;
 			sourceTree = "<group>";
 		};
 		43F0DFB5176AB96600A2E5BB /* Model */ = {
@@ -308,10 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				437F56531768240F00861D1A /* InfoPlist.strings in Resources */,
-				437F565B1768240F00861D1A /* Default.png in Resources */,
-				437F565D1768240F00861D1A /* Default@2x.png in Resources */,
-				437F565F1768240F00861D1A /* Default-568h@2x.png in Resources */,
-				437F56681768240F00861D1A /* SPDViewController_iPad.xib in Resources */,
+				437F56681768240F00861D1A /* SPDViewController.xib in Resources */,
 				437F568B17684EA600861D1A /* ShyDrums.wav in Resources */,
 				437F568C17684EA600861D1A /* ShyGuitar.wav in Resources */,
 				43FDAF17180858E100E07DA5 /* SPDControlsView.xib in Resources */,
@@ -386,12 +366,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		437F56661768240F00861D1A /* SPDViewController_iPad.xib */ = {
+		437F56661768240F00861D1A /* SPDViewController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				437F56671768240F00861D1A /* en */,
 			);
-			name = SPDViewController_iPad.xib;
+			name = SPDViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -463,6 +443,7 @@
 				GCC_PREFIX_HEADER = "SpatialPd/SpatialPd-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SpatialPd/SpatialPd-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
@@ -477,6 +458,7 @@
 				GCC_PREFIX_HEADER = "SpatialPd/SpatialPd-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "SpatialPd/SpatialPd-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
